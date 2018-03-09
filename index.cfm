@@ -186,11 +186,17 @@ WHERE	mandant = '#session.mandant#'
 	<div id="headerbar">
 		<div style="padding:10px 10px;">
 			<div id="corporate">
-				<strong>Felix Flexy CMS</strong> - Backend Panel version 2.1 &nbsp; &nbsp; &nbsp; 2014 &copy; by mrz & flx
+				<strong>Felix Flexy CMS</strong> - Backend Panel version 2.1 <br /> 2014 &copy; by mrz & flx
 			</div>
 			<div id="header-right">
+				
 				<cfif session.loggedIn EQ true>
 					<cfoutput>
+						<div class="user-welcome">
+							<cfoutput>
+								<div>Hello <strong>#session.UserPreName#</strong> !</div>
+							</cfoutput>
+						</div>
 						<div id="profile">
 							<img src="/admin/img/profile.png" alt="profile" / id="img-menu">
 							<div id="profile-menu">

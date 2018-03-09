@@ -31,8 +31,9 @@ strong, b{
 }
 
 #admin-wrapper{
-	font-size:1em;
-	line-height:1.35em;	
+	margin-top: 3em;
+	font-size: 1em;
+	line-height: 1.35em;	
 }
 
 #headerbar{
@@ -154,7 +155,7 @@ strong, b{
 	color:#444;
 	font-family: 'Open Sans', sans-serif;
 	font-size:0.9em;
-	text-transform:uppercase;
+	text-transform: uppercase;
 	line-height:2em;
 	}
 
@@ -164,14 +165,16 @@ strong, b{
 	}
 
 #wrapper-left ul{
+	border-top: 1px solid #B2B2B2;
 	list-style:none;
 	padding:0;
 	margin:0;	
 }
 
 #wrapper-left ul li{
-	background:#FAFAF7;
-	color:#999;
+/*	background: #c6dce0;*/
+	background: linear-gradient(to right, #e7eef3 0%,#ffffff 70%);
+	color: #999;
 	border-bottom:1px solid #B2B2B2;
 	transition: color 0.2s ease-out 0s;
 
@@ -251,19 +254,43 @@ strong, b{
 /* ----------------------LOGIN ------------*/
 
 #login-table{
-	
-	border: 1px solid #E1E1E1;
-	padding:2em;
+/*	background: #999;*/
+	border: 1px solid #FFF;
+	padding: 4em;
+	box-shadow:  5px 5px 8px rgba(90, 90, 90, 0.66);
 	}
 
 #login-table tr, td{
+	
 /*	border-bottom: 1px solid #FFF !important;*/
-	 }
+	border-bottom: 0px;
+	}
 	 
 #login-table td{
 	padding: 0.62rem;
-	
 	}
+
+
+.login-btn {
+	font-style: normal;
+	margin: 0  3px;
+	color:#375d81;
+	text-decoration: none;
+	background: #FBFBFB;
+	border: 1px solid #b8bece;
+	border-radius: 3px;
+	padding: 4px;
+	transition: all 0.35s ease;
+	}
+
+
+.login-btn:hover {
+	color: #7affff;
+	background: #333;
+	text-decoration:none;
+	border: #3b73d9 1px solid;
+	transition: background 0.35s ease-out;
+}
 
 
 .toolTipWrapper{
@@ -480,8 +507,9 @@ input [type=file]:hover{
 
 /* pagemanagement content row*/
 .page-row {
-	background: #71a2bb;
-	color: #edf7ff;
+	background: rgba(227, 238, 249, 0.56);
+	color: #5a778e;
+	border-bottom: 1px solid #1f6b8e;
 }
 
 
@@ -489,6 +517,7 @@ input [type=file]:hover{
 	background: rgba(158, 182, 193, 0.11);
 	font-style: oblique;
 	color: #4D4B4B ;
+	border-bottom: #b9b9b9;
 }
 
 

@@ -1,5 +1,5 @@
 <cfprocessingdirective pageencoding="utf-8" />
-<div style="width:400px;margin:0 auto;">
+<div style="width:600px;margin:0 auto;">
 <!---wenn username und pw defined ist, und sessionvariable false ist -> fehlermeldung werfen--->
 <cfif isdefined("form.username") AND isdefined("form.password") AND session.loggedIn EQ false>
 	Versuch fehlgeschlagen. versuchen Sie es erneut.
@@ -12,9 +12,10 @@
 <cfelseif (wartungscheck.maintainance EQ 1 AND isdefined("url.admin")) OR wartungscheck.maintainance EQ 0>
 	<!---login -form:--->
 	<cfoutput>
-	<div id="login-table">
+	<div id="login-table" class="login-screen">
 		<form action="#cgi.SCRIPT_NAME#<cfif isdefined('url.admin')>?admin</cfif>" method="post">
 		<table>
+			<thead><h2>Backend-Login</h2></thead>
 		<tr>
 			<td>Username</td>
 			<td><input type="text"name="username"></td> 
@@ -25,7 +26,7 @@
 		</tr>
 		<tr>
 			<td></td>
-			<td><input type="submit" value="einloggen"></td>
+			<td><input class="login-btn" type="submit" value="Start"></td>
 		</tr>
 		</table>
 		</form>
