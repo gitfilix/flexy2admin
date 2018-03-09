@@ -1,0 +1,140 @@
+
+
+/*1. CSS adjustments for Media Queries --------------------------*/
+/*---------------------------------------------------------------*/
+
+
+/*until 1024 ipad landscape */
+
+/*@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:landscape) {*/
+@media screen and (max-width: 1024px){
+	body{
+		/*blau*/
+		/*background:#33F;*/
+	}
+
+	#inner-wrap{
+		width:1000px !important;
+		max-width:1000px;
+	}
+
+
+
+/*1. Service Navigation  ----------------------------------------*/
+/*---------------------------------------------------------------*/
+	
+	/*Service nav is horizontally */
+	.servicenav ul li{
+		font-size:1em;
+		width:8em;
+		display:block;
+		padding-top: 1.4em;
+		margin-bottom:0.5em;
+		color:#111;
+		padding:0.5em;
+		border: 1px solid #999;
+	}
+	
+	.servicenav ul li a:link{
+		border: none;
+		-moz-transition:all 0.3s ease-in;
+		-webkit-transition:all 0.3s ease-in;
+		transition:all 0.3s ease-in;
+	}
+	
+	.servicenav ul li a:hover{
+		color:#A33;
+		border-bottom: none;
+		-moz-transition:all 0.3s ease-in;
+		-webkit-transition:all 0.3s ease-in;
+		transition:all 0.3s ease-in;	
+	}
+
+	
+	.active{
+		color:#A33;
+		
+		
+		-moz-transition:all 0.3s ease-in;
+		-webkit-transition:all 0.3s ease-in;
+		transition:all 0.3s ease-in;
+	} 
+
+
+/*1. text adjustments--  ----------------------------------------*/
+/*---------------------------------------------------------------*/
+
+	.textbox{
+		margin-right:1em;
+		background:rgba(33, 33, 33, 0.4);
+		padding-left:1em;
+	}
+	
+	.textbox h2{
+		font-size:1.6em;
+		letter-spacing:0.1em;
+		font-weight:200;
+		text-transform:capitalize;
+	}
+	
+	.textbox h3{
+		font-size:1.1em;
+		letter-spacing:0.0em;
+		font-weight:300;
+	}	
+		
+	.textbox p{
+		padding-top:1em;
+		font-size:1em;
+		font-weight:300;
+		line-height:1.6em;
+		word-spacing:normal;
+	}
+
+
+/*1. WebFormular ------------------------------------------------*/
+/*---------------------------------------------------------------*/
+
+	.webform input{
+		height: 2.6em;
+		width:80%;
+		/*max-width:50%;*/
+		margin:0;
+	}
+
+	.webform textarea{
+		width:82%;
+		max-width:82%;
+		margin:0;
+		resize: none;
+  		overflow: auto;
+	}
+	
+	#submit-btn{
+		font-weight:200;
+		letter-spacing:0.1em;
+		width:82%;
+	}	
+	
+	
+}
+
+
+
+
+/*I pad portrait format*/
+@media screen and (device-width: 768px) and (device-height: 1024px)  and (orientation:portrait){
+	
+	body{/*rot*/
+		background:#F33;
+	}
+
+	#inner-wrap{
+	margin: 0 auto;
+	max-width:700px;
+	/*transparent background for content*/
+	background: rgba(25, 25, 25, 0.3);
+	}
+	
+	
+}

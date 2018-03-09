@@ -1,0 +1,92 @@
+
+	html,body{
+		/*height:100%;*/
+	}
+	
+	body{
+		font-family:Tahoma, Geneva, sans-serif;
+		font-size:100.01%;
+		color:#666;
+		background-color:#e5e5e5;
+	}
+	
+	a{
+		color:steelblue;
+		text-decoration:none;
+	}
+	
+	.servicenav a:before { content: '› ' }	
+
+	
+	.main-wrapper{
+		font-size:1.1em;
+		line-height:1.3em;	
+		background-color:#fff;
+	}
+	
+	.servicenav{
+		padding: 1.3em;
+	}
+	
+	.servicenav ul{
+		list-style:none;
+		margin:0;
+		padding:0;
+	}
+	
+	.servicenav ul li{
+		float:right;
+		margin-left:1.2em;
+	}
+	
+	.servicenav ul li:hover a,
+	.servicenav ul li.active a{
+		color:grey;
+	}
+	
+	.themennav{
+		padding:1.3em;	
+	}
+	
+	.themennav ul{
+		
+	}
+	
+	.themennav ul li{
+		margin-bottom:10px;
+		background-color:silver;
+		padding:10px 0 10px 0;
+		text-align:center;
+		color:#fff;
+	}
+	
+	.themennav ul li a{
+		color:#fff;
+	}
+	
+	.themennav ul li:hover,
+	.themennav ul li.active{
+		background-color:grey;
+		color:#fff;
+	}
+	
+	.footer{
+		background-color:#333;
+		color:#fff;
+		width:920px;
+		padding:20px;
+		
+	}
+	
+	.sidebar-elem{
+		
+		background:#F0F0F0;
+		margin-bottom:1.3em;	
+		font-size:0.85em;
+	}
+	
+	
+	
+	
+	.flexslider {border: 0 !important;}
+

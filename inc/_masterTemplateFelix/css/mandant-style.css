@@ -1,0 +1,515 @@
+
+/*---------------------------------------------------------------*/
+/* CSS Document Flexy     */
+/* MANDANT Specific styles*/
+/*---------------------------------------------------------------*/
+
+/*-----------------
+Mandant Colors
+-------------------
+
+Color A: #D1AC61
+
+Color B: #E0C266 (Fest)
+
+Color C: #D6AD33 (Gold)
+
+Color D: #FAF6E8 (very Bright)
+
+*/
+
+
+
+/*1. general styles ---------------------------------------------*/
+/*---------------------------------------------------------------*/
+
+
+
+/* =Typography
+-----------------------------------------------------------------*/
+
+body{
+	
+	font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	/*font-family: 'Roboto', sans-serif, 'Gill Sans', sans-serif, 'Merriweather', serif;*/
+	
+	font-size: 100.01%;
+	}
+
+
+/* =Outer Wrapper
+-----------------------------------------------------------------*/
+#outer-wrap{
+	background:#DDD;
+	/*background:url(../img/bg3.jpg) no-repeat center center fixed;*/
+	/*background-position:top 100px;
+ 	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+	height:100%;
+	max-height:100%;*/
+	}
+
+
+
+/* Inner Wrapper 1024 pixel 
+-----------------------------------------------------------------*/
+
+#inner-wrap{
+	margin: 0 auto;
+	max-width:1024px;
+	background:#FFF;
+	border:#888 1px solid;
+	/*transparent background for content*/
+	/*background: rgba(25, 25, 25, 0.3);*/
+	}
+
+
+
+
+/* Logo styles ------------------------------------------------*/
+/*-------------------------------------------------------------*/
+.logo{
+	padding-top:2em;
+	padding-left:1em;
+	font-family:'Gill Sans', sans-serif;
+	}
+
+.logo h1{
+	display:inline;
+	letter-spacing:0.2em;
+	font-size:1.5em;
+	color:#111;
+	font-weight:200;
+	}
+
+.logo h2{
+	font-size:1em;
+	}
+
+.line_thin{
+	border-bottom: 1px solid #CCC;
+	}
+
+
+
+
+
+/*2. Themen Navigation ------------------------------------------*/
+/*---------------------------------------------------------------*/
+
+.themennav{
+	padding-top:2em;
+	font-size:1em;
+	font-weight:200;
+	margin-left:1em;
+	float:left;
+	
+	}
+	
+.themennav li{
+	display:inline;
+	list-style-type:none;
+	margin-right:1em
+	}
+	
+.themennav li a{
+	text-decoration:none;
+	color:#111; 
+	}
+	
+
+.themennav li a:link{
+	text-decoration:none;
+	}
+
+.themennav li a:hover{
+	color:#A33;
+	border-bottom:#A33 1px solid;
+	}
+
+.themennav li:visited{
+	color:#111;
+	}
+
+
+
+/*3. SERVICE Nav styles -----------------------------------------*/
+/*---------------------------------------------------------------*/
+	
+.servicenav{
+	font-size:0.9em;
+	font-weight:300;
+	}
+
+
+.servicenav ul li{
+	padding-right:1em;
+	display:inline;
+	}
+	
+	
+.servicenav ul li a:link{
+	text-decoration:none;
+	color:#111;
+	/*-moz-transition:all 0.3s ease-in;
+	-webkit-transition:all 0.3s ease-in;
+	transition:all 0.3s ease-in;*/
+	}
+	
+.servicenav ul li a:hover{
+	color:#A33;
+	border-bottom: 1px solid #A00;
+	-moz-transition:all 0.3s ease-in;
+	-webkit-transition:all 0.3s ease-in;
+	transition:all 0.3s ease-in;
+	}
+
+
+.servicenav ul li a:visited{
+	color:#111;	
+	}
+
+
+.servicenav ul li a:visited:hover{
+	color:#A00;
+	}
+
+ /*active state*/
+.active a{
+	color:#A33 !important;
+	border-bottom:#A33 1px solid;
+	}
+
+
+
+
+/*4. SUB Navigation styles -----------------------------------------*/
+/*------------------------------------------------------------------*/
+	
+
+.subnav{
+	float:left;
+	padding-left:1em;
+	}
+
+
+.subnav li{
+	display:inline;
+	float:left;
+	font-size:0.8em;
+	letter-spacing:0.1em;
+	font-weight:300;
+	list-style-type:none;
+	}
+
+.subnav a{
+	padding:0.5em;
+	}
+
+		
+
+			
+.subnav li a:link{
+	color:#111;
+	text-decoration:none;
+	border: solid 1px #DDD;
+	-moz-transition:all 0.4s ease-in;
+	-webkit-transition:all  0.4s ease-in;
+	transition:all  0.4s ease-in;
+	}
+
+.subnav li a:hover{
+	color:#FAF6E8;
+	background:#444;
+	border: solid 1px #222;
+	-moz-transition:all 0.4s ease-in;
+	-webkit-transition:all  0.4s ease-in;
+	transition:all  0.4s ease-in;
+	}
+	
+
+.subnav li a:visited{
+	color:#111;
+	text-decoration:none;
+	border: solid 1px #DDD;
+	}
+
+.subnav li a:hover:visited{
+	color:#FAF6E8;
+	background:#444;
+	border: solid 1px #222;
+	}
+
+/*active state ------------------------------------------------*/
+.active{
+	color:#A00;
+	}
+
+
+/* 5. Content styles ------------------------------------------*/
+/*-------------------------------------------------------------*/
+
+.content{
+	background:#fafafa;
+	padding-bottom:8em;
+	}
+
+
+.content h1{
+	font-size:2em;
+	font-weight:100;
+	letter-spacing:0.05em;
+	padding-bottom:2em;
+	}
+
+
+.content h2{
+	font-size:1.2em;
+	font-weight:200;
+	padding-bottom:2em;
+	}
+
+.content section{
+	font-family:Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+	color:#444;
+	font-size:1.1em;
+	}
+
+
+
+/* 5.1 Text variant 2 on the right ----------------------------*/
+/*-------------------------------------------------------------*/
+.textbox{
+	margin-right:1em;
+	padding-left:1em;
+	background:rgba(13, 13, 13, 0.2);
+	}
+	
+.textbox h2{
+	color:#E9E9E9;
+	font-size:1.6em;
+	letter-spacing:0.1em;
+	font-weight:200;
+	}
+
+.textbox h3{
+	color:#444;
+	font-size:1em;
+	line-height:1.4em;
+	letter-spacing:0.1em;
+	font-weight:300;
+	}	
+	
+.textbox p{
+	padding-top:1em;
+	font-size:1em;
+	color:#222;
+	font-weight:300;
+	line-height:1.6em;
+	word-spacing:normal;
+	}	
+
+.content_big img{
+	width:100%;
+	max-width:100%; 
+	height: auto;
+	}	
+
+#pic_desc{
+	color:#D5D5D5;
+	font-size:1em;
+	font-weight:200;
+	}
+	
+
+
+
+	
+/*5.2 Content Webform ------------------------------------------*/
+/*--------------------------------------------------------------*/
+
+
+input:focus {
+    outline:none;
+}
+	
+.webform{
+	background:#F9F9F9;
+	border: 1px solid #666;
+	padding-bottom:2em;
+	padding-left:1em;
+	font-family: 'Roboto', sans-serif;
+	font-size:1em;
+	color:#333;
+	}
+
+.webform h2{
+	font-size:1.6em;
+	font-weight:200;
+	letter-spacing:0.2em;
+	}
+
+.webform input{
+	font-family: 'Roboto', sans-serif;
+	font-weight:200;
+	height: 2.4em;
+	width:60%;
+	margin:0;
+	border:#999 1px solid;
+	background:#e7e7e7;
+	color:#777;
+	}
+
+
+.webform input:focus{
+	background:#FBFBFB;
+	color:#111;
+	border:#111 1px solid;
+	-moz-transition:all 0.3s linear;
+	-webkit-transition:all  0.3s linear;
+	transition:all  0.3s linear;
+	}
+
+
+.webform textarea{
+	font-family: 'Roboto', sans-serif;
+	font-weight:200;
+	width:62%;
+	max-width:62%;
+	margin:0;
+	background:#ddd;
+	display:block;
+	resize: none;
+  	overflow: auto;
+	color:#777;
+	border:#999 1px solid;
+	-moz-transition:all 0.3s linear;
+	-webkit-transition:all  0.3s linear;
+	transition:all  0.3s linear;
+	}
+
+.webform textarea:focus{
+	-moz-transition:all 0.3s linear;
+	-webkit-transition:all  0.3s linear;
+	transition:all  0.3s linear;
+	background:#F2F2F2;
+	color:#111;
+	border:#111 1px solid;
+	outline-width: 0;
+	outline: none;
+	-moz-appearance:none;
+	-webkit-appearance:none;
+	}
+	
+.forms label{
+	margin-bottom:1em;
+	margin-top:2em;
+	font-weight:300;
+	letter-spacing:0.1em;
+	}
+
+
+#submit-btn{
+	font-family: 'Roboto', sans-serif;
+	background:#E6E6E6;
+	margin-top:4em;
+	width:62%;
+	border:#111 1px solid;
+	color:#777;
+	font-weight:200;
+	letter-spacing:0.05em;
+	-moz-transition:all 0.4s linear;
+	-webkit-transition:all  0.4s linear;
+	transition:all  0.4s linear;
+	}	
+	
+#submit-btn:hover{
+	border:#A33 1px solid;
+	color:#111;
+	background:#F2F2F2;
+	}	
+
+		
+/*5.3 flexslider Custom styles --------------------------------*/
+/*-------------------------------------------------------------*/
+
+
+/* Direction Nav */
+/*
+.flex-direction-nav {*height: 0;}
+.flex-direction-nav a  { display: block; width: 40px; height: 40px; margin: -20px 0 0; position: absolute; top: 50%; z-index: 10; overflow: hidden; opacity: 0; cursor: pointer; color: rgba(0,0,0,0.8); text-shadow: 1px 1px 0 rgba(255,255,255,0.3); -webkit-transition: all .3s ease; -moz-transition: all .3s ease; transition: all .3s ease; }
+.flex-direction-nav .flex-prev { left: -50px; }
+.flex-direction-nav .flex-next { right: -50px; text-align: right; }
+.flexslider:hover .flex-prev { opacity: 0.7; left: 10px; }
+.flexslider:hover .flex-next { opacity: 0.7; right: 10px; }
+.flexslider:hover .flex-next:hover, .flexslider:hover .flex-prev:hover { opacity: 1; }
+.flex-direction-nav .flex-disabled { opacity: 0!important; filter:alpha(opacity=0); cursor: default; }
+.flex-direction-nav a:before  { font-family: "flexslider-icon"; font-size: 40px; display: inline-block; content: '\f001'; }
+.flex-direction-nav a.flex-next:before  { content: '\f002'; }
+*/
+/* Control Nav */
+/*
+.flex-control-nav {width: 100%; position: absolute; bottom: -40px; text-align: center;}
+.flex-control-nav {display:none !important;}
+.flex-control-nav li {margin: 0 6px; display: inline-block; zoom: 1; *display: inline;}
+.flex-control-paging li a {width: 11px; height: 11px; display: block; background: #666; background: rgba(0,0,0,0.5); cursor: pointer; text-indent: -9999px; -webkit-border-radius: 20px; -moz-border-radius: 20px; -o-border-radius: 20px; border-radius: 20px; -webkit-box-shadow: inset 0 0 3px rgba(0,0,0,0.3); -moz-box-shadow: inset 0 0 3px rgba(0,0,0,0.3); -o-box-shadow: inset 0 0 3px rgba(0,0,0,0.3); box-shadow: inset 0 0 3px rgba(0,0,0,0.3); }
+.flex-control-paging li a:hover { background: #00f9fc; }
+.flex-control-paging li a.flex-active { background: #139a92; cursor: default; }
+*/
+
+
+
+/*6. Footer styles --------------------------------------------*/
+/*-------------------------------------------------------------*/
+
+.footer{
+	margin-top:4em;
+	border-top: 1px solid #DDD;
+	padding-top:3em;
+	padding-bottom:0.5em;
+	font-size:0.8em;
+	font-weight:300;
+	letter-spacing:0.1em;
+	/*color:#3CF;*/
+	color:#555;
+	padding-left:1em;
+	}
+	
+.footer a:link{
+	color:#777;
+	text-decoration:none;
+	transition: color 0.3s linear, background 0.8s linear ;
+	}
+
+.footer a:hover {
+    color:#A00;
+	transition: color 0.3s linear, background 0.8s linear ;
+	}
+	
+.footer a:visited{
+	color:#666;
+	transition: color 0.3s linear, background 0.8s linear ;
+	}	
+
+	
+/*6.1 Webkanal styles --------------------------------------------*/	
+.author a{
+    color: #00f9fc;
+    letter-spacing: 0;
+    text-decoration: none;
+    transition: all 0.2s linear, background 0.8s linear;
+	}
+
+.author a:hover:after {
+    content: " >";
+	}
+	
+.author a:hover {
+    color: #FB9133;
+	background:#222;
+    letter-spacing: 0.3em;
+	transition: all 0.2s linear, background 0.8s linear;
+	}
+	

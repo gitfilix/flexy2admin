@@ -1,0 +1,87 @@
+/* CSS Document for pagemanagement - FLEXY STYLE */
+
+
+#activ{
+	color:#3F3;
+	background:#777;
+	}
+	
+
+#inactiv{
+	color:#9FF;
+	background:#333;
+	}
+	
+
+
+/* colors für status*/
+#activ{
+	color:#3F3;
+	}
+
+#inactiv{
+	color:#9FF;
+	}
+	
+/*:nth-child(2n){*/
+
+table tr,table tr table tr{
+	background:#949494;
+	}
+
+
+	
+table td{
+	vertical-align:top;
+	padding:5px 5px;
+	}
+	
+table td:first-child{
+	padding-top:8px;
+	}
+	
+table tr:nth-child(2n+1),table tr:nth-child(2n+1) table tr{
+	background:#B2B2B2;
+	}	
+
+#inhalt_color{
+	color:#3B881D;
+	background:#F2F2F2; !important;
+	}
+
+#inhalt_color:a{
+	color:#3B881D;
+	background:#555; !important;
+	}
+
+
+	
+#gray1{
+	color:#039;
+	letter-spacing:2px;
+	background:#9A9A9A;
+	}
+
+#gray2{
+	color:#039;
+	letter-spacing:2px;
+	background:#B2B2B2;
+	}
+
+#gray3{
+	color:#039;
+	letter-spacing:2px;
+	background:#D6D6D6;
+	}	
+	
+input[type=text],input[type=file],textarea,select{
+	width:98%;
+	border:1px solid silver;
+	padding:2px;	
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:13px;
+}
+
+select{
+	width:99%;
+}

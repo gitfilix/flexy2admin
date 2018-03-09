@@ -1,0 +1,70 @@
+html {
+    height: 100%;
+}
+
+body {
+    cursor: default;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    font-family: Lucida Grande, sans-serif;
+    font-size: 10px;
+    margin: 0;
+   
+}
+
+
+.toolbar-item {
+    padding: 4px 6px;
+    margin: 0;
+    background-color: transparent;
+    border-style: none;
+    border-color: transparent;
+	
+    
+}
+.toolbar-icon {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+   
+}
+
+.error{
+color=red;
+}
+
+.button{
+background-color: #ECEEF5;
+border-color: #CAD4E7;
+}
+
+td.normal,td.normalon,td.normalclick{
+font-family: arial, verdana;
+font-size: 15px;
+font-weight: normal;
+height: 20px; 
+background-color: #E0E0E0; 
+
+}
+
+td.normalon{
+background-color: grey; 
+font-size: 18px;
+color:orange;
+
+}
+
+td.normalclick {
+background-color: grey; 
+font-family: arial, verdana;
+font-size: 18px;
+font-weight: normal;
+height: 20px; 
+color:orange;
+
+}
+
