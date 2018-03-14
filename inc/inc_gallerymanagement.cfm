@@ -393,12 +393,12 @@ FROM	albumimages
 WHERE	albumid = #albumIDx#
 ORDER BY reihenfolge
 </cfquery>
-<tr>
-	<td>#albumtitle# - #albumIDx#</td>
+<tr class="album_header_row">
+	<td><strong>Album:</strong> #albumtitle#</td>
 	<td>
 		<cfif rightEdit EQ 1>
 			<a href="#cgi.SCRIPT_NAME#?editalbum=#albumIDx#">
-				bearbeiten
+				Album
 			</a>
 		</cfif>
 	</td>
@@ -412,7 +412,7 @@ ORDER BY reihenfolge
 	<td>
 		<cfif getImagesByAlbumID.recordcount GT 0>
 		<a href="javascript:$('##bilder#albumIDx#').toggle();void(0);">
-			Bilder
+			Alle Bilder
 		</a>
 		</cfif>&nbsp;
 		<cfif rightAdd EQ 1>
@@ -452,10 +452,10 @@ ORDER BY reihenfolge
 		<div style="<cfif isdefined("url.openGallery") AND url.openGallery EQ getAlbums.id>display:block;<cfelse>display:none;</cfif>" id="bilder#albumIDx#">
 			<table cellspacing="0" cellpadding="0" width="100%">
 			<cfloop query="getImagesByAlbumID">
-			<tr>
+			<tr class="album_image_row">
 				<cfif imageThumbPath NEQ "">
-				<td>
-					<img src="<cfif session.mandantURL NEQ "">http://www.#session.mandantURL#/<cfif session.mandantURL CONTAINS "schief">#session.serverpath#/</cfif><cfelse>/#session.serverpath#/</cfif>upload/galleries/#imageThumbPath#" width="50" />
+				<td class="album_thumb_pix">
+					<img src="http://www.#session.mandantURL#/#session.serverpath#/upload/galleries/#imageThumbPath#" max-width=100px;  />
 				</td>
 				</cfif>
 				<td><strong><cfif imageTitle NEQ "">#imageTitle#<cfelse>[kein Titel]</cfif></strong><br/>#imagecaption#</td>

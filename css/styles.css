@@ -520,7 +520,15 @@ input [type=file]:hover{
 	border-bottom: #b9b9b9;
 }
 
+.album_thumb_pix img{
+	width: 100px;
+	max-width: 100px;
+	height: auto;
+}
 
+.album_image_row{
+	border-bottom:  1px dotted #dfdfdf;
+}
 
 h2{
 	font-family: 'Exo', sans-serif;
