@@ -316,13 +316,12 @@ select{
 	
 	
 input {
-	font-size: 0.9rem;
+	font-size: 1rem;
 	font-family:'Exo', sans-serif;
-	font-family:200;
-	/*background:#e9eff1;*/
+	font-family: 200;
 	padding: 7px;
 	border: 1px solid #CCCCCC;
-	transition: all 0.2s ease-out;
+	transition: all 0.3s ease-out;
 	}
 
 
@@ -331,8 +330,25 @@ input :hover{
 	transition: color 0.25s ease-in 0.5s;
 	/*background:#375d81;*/
 	/*color: #FFF;*/
-	border: 1px solid #333;
+	border: 1px solid #12e3e3;
 	}
+
+
+input[type=checkbox] +label {
+	font-size: 1rem;
+	font-family:'Exo', sans-serif;
+	font-family: 200;
+	background: #333;
+	color: #DDD;
+
+
+	transition: all 0.2s ease-in;
+}
+
+input[type=checkbox]:checked +label {
+	color: #12e3e3;
+	transition: all 0.2s ease-in;
+}
 
 /*text input*/
 
@@ -493,7 +509,8 @@ input [type=file]:hover{
 	font-family: 'Open Sans', sans-serif;
 	color: #32323D;
 	font-size: 0.9rem;
-	text-transform:uppercase;
+	text-transform: uppercase;
+	margin-top: 3rem;
 	}
 
 .admin-content table tr {
@@ -504,20 +521,46 @@ input [type=file]:hover{
 	line-height:1.8em;
 	}	
 
+.show-all{
+	display: inline;
+	max-width: 160px;
+	padding: 0.6rem;
+	background: #333;
+	border-radius: 3px;
+	border-top: 1px solid #DDD;
+	margin-bottom: 2rem;
+}
+
+.switch-show-all {
+	font-size: 1rem;
+	font-family: 'Exo';
+/*	color: #12e3e3;*/
+	color: #BDBDBD;
+}
 
 /* pagemanagement content row*/
 .page-row {
 	background: rgba(227, 238, 249, 0.56);
 	color: #5a778e;
+	border-top: 1px solid #1f6b8e;
 	border-bottom: 1px solid #1f6b8e;
 }
 
+.nav-desc {
+	color: #0a6288;
+	font-style: oblique;
+}
 
 .content-row {
 	background: rgba(158, 182, 193, 0.11);
+	font-style: normal;
+	color: #272727 ;
+	border-bottom: 1px  solid #ddd;
+}
+
+.content-desc {
+	color: #777;
 	font-style: oblique;
-	color: #4D4B4B ;
-	border-bottom: #b9b9b9;
 }
 
 .album_thumb_pix img{
@@ -543,9 +586,9 @@ h2{
 	}
 
 h4{
-	font-family:'Open Sans', sans-serif;
-	font-weight:400;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 200;
 	font-size:0.9em;
 	color:#777;
-	padding-bottom:2em;
+	padding-bottom:1.5rem;
 	}

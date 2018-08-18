@@ -11,8 +11,9 @@
 <cfinclude template="prc_pageprocessing.cfm" />
 <h2>Pagemanagement</h2>
 
-<h4>Organisation der Seiten und Inhalte</h4>
+<h4>Organisation der Navigation-Seiten und Inhalts-Texte</h4>
 <!--- pageansicht toggeln --->
+
 <script>
 	function toggler(){
 		if($('#toggler:checked').val()==1){
@@ -24,9 +25,15 @@
 		<cfoutput>location.href='#cgi.SCRIPT_NAME#?viewx='+x;</cfoutput>
 	}
 </script>
-<cfif cgi.QUERY_STRING EQ "" OR isdefined("url.viewx") OR isdefined("url.module") OR isdefined("url.lang")>
-	<input type="checkbox" name="toggler" value="1" onchange="toggler()" id="toggler" <cfif session.viewpages EQ 1>checked="checked"</cfif> /> Alle offen anzeigen
-</cfif>
+<div class="show-all">
+	<cfif cgi.QUERY_STRING EQ "" OR isdefined("url.viewx") OR isdefined("url.module") OR isdefined("url.lang")>
+		<input type="checkbox" name="toggler" value="1" onchange="toggler()" id="toggler" <cfif session.viewpages EQ 1>checked="checked"</cfif> />
+		<label for="toggler" class="switch-show-all">
+			&nbsp;Alle Texte anzeigen &nbsp;
+		</span>
+	</cfif>
+</div>
+
 <!--- ENDE pageansicht toggeln --->
 
 
@@ -114,7 +121,7 @@ WHERE	mandantenID = '#session.mandant#'
 	
 	<cfoutput query="getPage">
 	<tr class="page-row">
-		<td style="padding-left:<cfif arguments.level EQ 2>30<cfelseif arguments.level EQ 3>50<cfelseif arguments.level EQ 3>70<cfelseif arguments.level EQ 4>90<cfelseif arguments.level EQ 5>110</cfif>px;">#pagetitel#</td>
+		<td style="padding-left:<cfif arguments.level EQ 2>30<cfelseif arguments.level EQ 3>50<cfelseif arguments.level EQ 3>70<cfelseif arguments.level EQ 4>90<cfelseif arguments.level EQ 5>110</cfif>px;"><span class="nav-desc">Nav &there4; </span>#pagetitel#</td>
 		<td>
 			<cfif isactive EQ 1>
 			<div id="activ">aktiv</div>	
@@ -185,11 +192,11 @@ WHERE	mandantenID = '#session.mandant#'
 	<cfif getContents.recordcount GT 0>
 		<cfoutput query="getContents">
 			<tr class="content-row" style="<cfif session.viewPages EQ 0>display:none;</cfif>" <cfoutput>id="inhalte#arguments.pageid#a"</cfoutput>>
-				<td colspan="5" style="padding-left:<cfif arguments.level EQ 2>30<cfelseif arguments.level EQ 3>50<cfelseif arguments.level EQ 3>80<cfelseif arguments.level EQ 4>80<cfelseif arguments.level EQ 5>110</cfif>px;">#titel#</td>
+				<td colspan="5" style="padding-left:<cfif arguments.level EQ 2>20<cfelseif arguments.level EQ 3>50<cfelseif arguments.level EQ 3>80<cfelseif arguments.level EQ 4>80<cfelseif arguments.level EQ 5>110</cfif>px;"><span class="content-desc">Text &raquo;</span> #titel#</td>
 				<td>
 					<cfif rightEdit EQ 1>
 						<a href="#cgi.SCRIPT_NAME#?editcontent=#id#">
-							editieren
+							ändern
 						</a>
 					</cfif>
 				</td>
